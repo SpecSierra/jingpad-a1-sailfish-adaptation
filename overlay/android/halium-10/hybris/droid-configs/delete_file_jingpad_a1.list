@@ -1,0 +1,3 @@
+/etc/ofono/binder.conf
+/etc/ofono/binder.d/dual-sim.conf
+/var/lib/environment/ofono/noplugin.conf

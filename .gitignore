@@ -1,0 +1,17 @@
+# Build artifacts
+*.img
+*.zip
+*.tar
+*.tar.bz2
+*.tar.gz
+*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Temporary/editor files
+*.swp
+*.swo
+*~
+.DS_Store

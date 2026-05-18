@@ -1,0 +1,11 @@
+CPUCHECK_STRING="Spreadtrum UD710 3h10u Board"
+
+PART_1="boot"
+PART_2="dtbo"
+PART_3="recovery"
+
+PART_REAL_1="block/by-name/boot"
+PART_REAL_2="block/by-name/dtbo"
+PART_REAL_3="block/by-name/recovery"
+
+PART_I="1 2 3"

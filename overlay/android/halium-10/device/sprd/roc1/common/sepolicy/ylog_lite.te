@@ -1,0 +1,6 @@
+type ylog_lite, domain;
+type ylog_lite_exec, exec_type, vendor_file_type, file_type;
+type ylog_lite_cli_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(ylog_lite)
+
+allow ylog_lite mmc_ylog_file:dir { search };
