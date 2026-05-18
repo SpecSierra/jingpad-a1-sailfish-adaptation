@@ -10,6 +10,7 @@ and then replaces the Android boot image with `hybris-boot.img`.
 ## What is in this bundle
 
 - `hybris-boot.img`
+- `hybris-recovery.img`
 - `sfe-jingpad_a1-4.6.0.13.tar.bz2`
 - `on-device-install.sh`
 - `Jolla-4.6.0.13-jingpad_a1-aarch64.ks`
@@ -71,14 +72,25 @@ Typical command if Android is running:
 adb reboot bootloader
 ```
 
-### 4. Temporarily boot the Sailfish boot image in debug mode
+### 4. Boot the Sailfish recovery image for installation
+
+Use the recovery image as the installer/debug environment. It is built with
+always-debug enabled, unlike the normal `hybris-boot.img`.
+
+First try temporary boot:
 
 ```bash
-fastboot --cmdline bootmode=debug boot hybris-boot.img
+fastboot boot hybris-recovery.img
 ```
 
-If your fastboot build does not support `--cmdline`, it cannot request the
-hybris debug shell with this method.
+If temporary boot does not work on your fastboot/bootloader combination, use:
+
+```bash
+fastboot flash recovery hybris-recovery.img
+```
+
+Then boot to recovery mode using your normal JingPad recovery-key path or any
+working `fastboot reboot recovery` equivalent your host fastboot provides.
 
 ### 5. Wait for the USB network interface to appear
 
