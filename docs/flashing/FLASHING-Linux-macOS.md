@@ -74,11 +74,11 @@ adb reboot bootloader
 ### 4. Temporarily boot the Sailfish boot image in debug mode
 
 ```bash
-fastboot boot hybris-boot.img -c bootmode=debug
+fastboot --cmdline bootmode=debug boot hybris-boot.img
 ```
 
-If your fastboot build rejects `-c`, use a fastboot build that supports boot
-cmdline override and retry with its equivalent syntax.
+If your fastboot build does not support `--cmdline`, it cannot request the
+hybris debug shell with this method.
 
 ### 5. Wait for the USB network interface to appear
 
