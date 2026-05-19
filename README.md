@@ -57,14 +57,11 @@ sync`, and where the Phase 3-5 helper scripts fit into the workflow.
 - `droid-configs` completed
 - `droid-hal-version-jingpad_a1` completed
 - first SailfishOS 4.6 image artifacts completed
-- adaptation repo published to GitHub
-- corresponding kernel source repo published to GitHub
-- beta release assets published to GitHub Releases
 
 ## Real-device status
 
-The published source and artifact set is real, but the manual installer path is
-**not yet verified on hardware**.
+The source and artifact set is real, but the manual installer path is **not yet
+verified on hardware**.
 
 Observed on a real JingPad A1 during testing:
 
@@ -72,8 +69,8 @@ Observed on a real JingPad A1 during testing:
   not expose the expected USB RNDIS/telnet installer interface
 - flashing `hybris-boot.img` before staging the rootfs led to a JingPad-logo
   boot hang
-- an experimental `android-boot-rescue.img` asset was published as a recovery
-  aid, but it is not confirmed as a stock-equivalent rollback image
+- `android-boot-rescue.img` was prepared as a recovery aid, but it is not
+  confirmed as a stock-equivalent rollback image
 
 Current manual-install path:
 
@@ -85,42 +82,8 @@ Current limitation:
 
 - updater/recovery zip generation is still incomplete because Android-side
   `hybris-updater-script` is not generated for this device tree
-- the published manual install procedure should be treated as experimental until
-  a working installer/debug boot path is confirmed on real hardware
-
-## Suggested GitHub publishing model
-
-Use this repository as the **source/adaptation repo**, and publish the large
-image artifacts separately as:
-
-- GitHub Releases assets, or
-- another file host
-
-Do **not** commit the `*.tar.bz2`, `*.img`, or `*.zip` image artifacts directly
-into the Git repository.
-
-## How to publish this repo to GitHub
-
-From inside this repository:
-
-```bash
-git remote add origin git@github.com:YOUR_ACCOUNT/jingpad-a1-sailfish-adaptation.git
-git push -u origin main
-```
-
-Or with HTTPS:
-
-```bash
-git remote add origin https://github.com/YOUR_ACCOUNT/jingpad-a1-sailfish-adaptation.git
-git push -u origin main
-```
-
-If you want to authenticate with GitHub device code using the GitHub CLI:
-
-```bash
-gh auth login
-gh repo create jingpad-a1-sailfish-adaptation --private --source=. --push
-```
+- the manual install procedure should be treated as experimental until a
+  working installer/debug boot path is confirmed on real hardware
 
 ## Notes
 
