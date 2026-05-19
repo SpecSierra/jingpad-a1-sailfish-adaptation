@@ -7,6 +7,17 @@ existing Android `userdata` partition at:
 
 and then replaces the Android boot image with `hybris-boot.img`.
 
+## Status notice
+
+This bundle documents the current bring-up artifact set, but the installation
+path below is still **experimental**.
+
+On real JingPad A1 hardware, `fastboot boot hybris-recovery.img` was accepted
+by the bootloader but did **not** expose the expected USB debug interface, and
+flashing `hybris-boot.img` before staging the rootfs resulted in a JingPad-logo
+boot hang. Keep stock recovery access and a known-good Android/JingOS boot
+image available before experimenting further.
+
 ## What is in this bundle
 
 - `hybris-boot.img`
@@ -91,6 +102,10 @@ fastboot flash recovery hybris-recovery.img
 
 Then boot to recovery mode using your normal JingPad recovery-key path or any
 working `fastboot reboot recovery` equivalent your host fastboot provides.
+
+If the tablet never exposes the `192.168.2.x` installer network after booting
+or flashing `hybris-recovery.img`, stop there and do **not** flash
+`hybris-boot.img`.
 
 ### 5. Wait for the USB network interface to appear
 
@@ -177,3 +192,7 @@ fastboot reboot
 
 If you did not save the stock boot image, restore it from the original Android
 firmware package for the JingPad A1.
+
+An additional experimental asset, `android-boot-rescue.img`, is published with
+the beta release. Prefer testing it with `fastboot boot android-boot-rescue.img`
+before flashing it permanently.

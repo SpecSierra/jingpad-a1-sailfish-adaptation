@@ -23,6 +23,8 @@ The current build artifacts are available locally at:
 That directory currently contains:
 
 - `hybris-boot.img`
+- `hybris-recovery.img`
+- `android-boot-rescue.img`
 - `sfe-jingpad_a1-4.6.0.13.tar.bz2`
 - `jingpad_a1-sailfishos-4.6.0.13-manual-flash.zip`
 
@@ -44,6 +46,23 @@ Checksums and exact paths are recorded in:
 - `droid-configs` completed
 - `droid-hal-version-jingpad_a1` completed
 - first SailfishOS 4.6 image artifacts completed
+- adaptation repo published to GitHub
+- corresponding kernel source repo published to GitHub
+- beta release assets published to GitHub Releases
+
+## Real-device status
+
+The published source and artifact set is real, but the manual installer path is
+**not yet verified on hardware**.
+
+Observed on a real JingPad A1 during testing:
+
+- `fastboot boot hybris-recovery.img` was accepted by the bootloader, but did
+  not expose the expected USB RNDIS/telnet installer interface
+- flashing `hybris-boot.img` before staging the rootfs led to a JingPad-logo
+  boot hang
+- an experimental `android-boot-rescue.img` asset was published as a recovery
+  aid, but it is not confirmed as a stock-equivalent rollback image
 
 Current manual-install path:
 
@@ -55,6 +74,8 @@ Current limitation:
 
 - updater/recovery zip generation is still incomplete because Android-side
   `hybris-updater-script` is not generated for this device tree
+- the published manual install procedure should be treated as experimental until
+  a working installer/debug boot path is confirmed on real hardware
 
 ## Suggested GitHub publishing model
 

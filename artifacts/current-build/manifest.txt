@@ -4,6 +4,14 @@ Current build artifacts (not committed to GitHub-sized repo):
 29f5b9971e2c1db949fd9a8f3cfc58cccec5d639ba5bd9ad00805530bb8e84df  /srv/sailfishos/workspace/sfos/android/halium-10/SailfishOScommunity-release-4.6.0.13-jingpad_a1/hybris-boot.img
 size_bytes=24678400
 
+/srv/sailfishos/workspace/sfos/android/halium-10/SailfishOScommunity-release-4.6.0.13-jingpad_a1/hybris-recovery.img
+705d079841a90e8fa8834eab0ef5ccd1e7cf93d0dc24120d4761c824a38e3659  /srv/sailfishos/workspace/sfos/android/halium-10/SailfishOScommunity-release-4.6.0.13-jingpad_a1/hybris-recovery.img
+size_bytes=24678400
+
+/srv/sailfishos/workspace/sfos/android/halium-10/SailfishOScommunity-release-4.6.0.13-jingpad_a1/android-boot-rescue.img
+0a24b5c8a5bd1c9f78b9796883d56d391576cd5d3d471cb0ef6306b1ae9e9518  /srv/sailfishos/workspace/sfos/android/halium-10/SailfishOScommunity-release-4.6.0.13-jingpad_a1/android-boot-rescue.img
+size_bytes=36700160
+
 /srv/sailfishos/workspace/sfos/android/halium-10/SailfishOScommunity-release-4.6.0.13-jingpad_a1/sfe-jingpad_a1-4.6.0.13.tar.bz2
 d5db16f3cb7f7409bb1e638a9b71b8bc7eec7b2ba3086fccad5471ec29deed9a  /srv/sailfishos/workspace/sfos/android/halium-10/SailfishOScommunity-release-4.6.0.13-jingpad_a1/sfe-jingpad_a1-4.6.0.13.tar.bz2
 size_bytes=517825917
@@ -27,4 +35,3 @@ size_bytes=222
 /srv/sailfishos/workspace/sfos/android/halium-10/SailfishOScommunity-release-4.6.0.13-jingpad_a1/jingpad_a1-sailfishos-4.6.0.13-manual-flash.zip
 270b526be3b5626991476654ffd4ce5efe669772832b58ba09445df9d6190170  /srv/sailfishos/workspace/sfos/android/halium-10/SailfishOScommunity-release-4.6.0.13-jingpad_a1/jingpad_a1-sailfishos-4.6.0.13-manual-flash.zip
 size_bytes=523223595
-
