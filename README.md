@@ -16,11 +16,7 @@ contains:
 Large generated binaries are **not committed** here, because they are not a good
 fit for a normal GitHub repository.
 
-The current build artifacts are available locally at:
-
-`/srv/sailfishos/workspace/sfos/android/halium-10/SailfishOScommunity-release-4.6.0.13-jingpad_a1/`
-
-That directory currently contains:
+The original build produced these main artifacts:
 
 - `hybris-boot.img`
 - `hybris-recovery.img`
@@ -28,9 +24,13 @@ That directory currently contains:
 - `sfe-jingpad_a1-4.6.0.13.tar.bz2`
 - `jingpad_a1-sailfishos-4.6.0.13-manual-flash.zip`
 
-Checksums and exact paths are recorded in:
+Checksums and the original output paths are recorded in:
 
 `artifacts/current-build/manifest.txt`
+
+To recreate them from source, use:
+
+`docs/building/RECREATE-WORKSPACE.md`
 
 ## Repository layout
 
