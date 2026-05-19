@@ -39,6 +39,17 @@ Checksums and exact paths are recorded in:
 - `docs/` — AGENT/work journal plus Linux/macOS flashing instructions
 - `artifacts/current-build/` — manifest only, no large binaries
 
+## Recreating the local build tree
+
+If the original VM is gone, the rebuild notes are now preserved in:
+
+- `docs/building/RECREATE-WORKSPACE.md`
+- `docs/building/jingpad-a1.xml`
+
+Those files document the original `/srv/sailfishos` workspace layout, Platform
+SDK and Ubuntu HA chroot setup, the exact saved local manifest used for `repo
+sync`, and where the Phase 3-5 helper scripts fit into the workflow.
+
 ## Current status
 
 - Android/Halium-side build completed

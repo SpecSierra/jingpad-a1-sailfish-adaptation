@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote
+    name="ubports-gitlab"
+    fetch="https://gitlab.com/" />
+
+  <!-- Publicly reachable JingPad A1 BSP mirror used as the Halium-side BSP source tree. -->
+  <project
+    path="bsp"
+    name="deadman96385/jingpad_android_bsp"
+    revision="W20.13.3" />
+
+  <!-- Split Android device trees identified from the public jingpad-bsp mirrors. -->
+  <project
+    path="device/sprd/roc1"
+    name="jingpad-bsp/device_sprd_roc1"
+    revision="W21.24.3" />
+  <project
+    path="device/sprd/sharkl5pro"
+    name="jingpad-bsp/device_sprd_sharkl5pro"
+    revision="W21.24.3" />
+
+  <!-- Public vendor trees directly referenced by the ud710_3h10u product files. -->
+  <project
+    path="vendor/sprd/release/IDH/Script"
+    name="jingpad-bsp/vendor_sprd_release_IDH_Script"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/tools/ota"
+    name="jingpad-bsp/vendor_sprd_tools_ota"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/external/drivers/gpu"
+    name="jingpad-bsp/vendor_sprd_external_drivers_gpu"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/modules/wlan"
+    name="jingpad-bsp/vendor_sprd_modules_wlan"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/interfaces/gnss"
+    name="jingpad-bsp/vendor_sprd_interfaces_gnss"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/interfaces/broadcastradio"
+    name="jingpad-bsp/vendor_sprd_interfaces_broadcastradio"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/interfaces/power"
+    name="jingpad-bsp/vendor_sprd_interfaces_power"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/interfaces/enhance"
+    name="jingpad-bsp/vendor_sprd_interfaces_enhance"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/partner/goodix"
+    name="jingpad-bsp/vendor_sprd_partner_goodix"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/partner/silead"
+    name="jingpad-bsp/vendor_sprd_partner_silead"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/modules/audio"
+    name="jingpad-bsp/vendor_sprd_modules_audio"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/modules/libmemion"
+    name="jingpad-bsp/vendor_sprd_modules_libmemion"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/modules/libcamera"
+    name="HaruStone/vendor_sprd_modules_libcamera"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/modules/hwcomposer"
+    name="ubports/porting/community-ports/android10/jingpad-a1/vendor_sprd_modules_hwcomposer_jing"
+    remote="ubports-gitlab"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/modules/lights"
+    name="jingpad-bsp/vendor_sprd_modules_lights"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/modules/enhance"
+    name="jingpad-bsp/vendor_sprd_modules_enhance"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/modules/power"
+    name="jingpad-bsp/vendor_sprd_modules_power"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/modules/sensors"
+    name="jingpad-bsp/vendor_sprd_modules_sensors"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/modules/dpu"
+    name="jingpad-bsp/vendor_sprd_modules_dpu"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/modules/vdsp"
+    name="jingpad-bsp/vendor_sprd_modules_vdsp"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/modules/vibrator"
+    name="jingpad-bsp/vendor_sprd_modules_vibrator"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/modules/tos"
+    name="jingpad-bsp/vendor_sprd_modules_tos"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/proprietories-source/charge"
+    name="jingpad-bsp/vendor_sprd_proprietories-source_charge"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/proprietories-source/sprdtrusty"
+    name="jingpad-bsp/vendor_sprd_proprietories-source_sprdtrusty"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/proprietories-source/packimage_scripts"
+    name="jingpad-bsp/vendor_sprd_proprietories-source_packimage_source"
+    revision="W21.24.3" />
+  <project
+    path="vendor/sprd/platform/frameworks/base"
+    name="jingpad-bsp/vendor_sprd_platform_frameworks_base"
+    revision="W21.24.3" />
+</manifest>
